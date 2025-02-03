@@ -563,6 +563,7 @@ main {
 .service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
+  text-align: right;
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
@@ -602,17 +603,26 @@ main {
 
 }
 
-.timeline-item { position: relative; }
+.timeline-item 
+{
+
+   position: relative;
+   
+   }
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
 .timeline-item-title {
+  position: relative;
+  left: -10px ;
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
 }
 
 .timeline-list span {
+  position: relative;
+  left: -10px 
   flex-direction: row-reverse;
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
@@ -623,7 +633,7 @@ main {
   content: "";
   position: absolute;
   top: -25px;
-  left: -30px;
+  right: -5px ;
   width: 1px;
   height: calc(100% + 50px);
   background: var(--jet);
@@ -633,7 +643,7 @@ main {
   content: "";
   position: absolute;
   top: 5px;
-  left: -33px;
+  right: -7px ;
   height: 6px;
   width: 6px;
   background: var(--text-gradient-yellow);
@@ -642,6 +652,8 @@ main {
 }
 
 .timeline-text {
+  position: relative;
+  left: -5px ;
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -657,7 +669,10 @@ main {
 .skills-list { padding: 20px; }
 
 
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+.skills-item:not(:last-child) 
+{ margin-bottom: 15px; 
+
+}
 
 .skill .title-wrapper {
   display: flex;
@@ -1222,7 +1237,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: 5px;
   }
 
-  .service-content-box { text-align: left; }
+  .service-content-box { text-align: right; }
 
 
 
